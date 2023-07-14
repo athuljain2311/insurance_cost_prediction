@@ -3,4 +3,6 @@ pandas
 numpy
 scikit-learn
 datetime
+dill
+xgboost
 #-e .
