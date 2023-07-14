@@ -5,4 +5,5 @@ scikit-learn
 datetime
 dill
 xgboost
+schemdraw<0.16
 #-e .
