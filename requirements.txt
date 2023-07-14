@@ -2,3 +2,5 @@ setuptools
 pandas
 numpy
 scikit-learn
+datetime
+-e .
