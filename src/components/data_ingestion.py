@@ -12,6 +12,8 @@ from model_trainer import ModelTrainer
 
 from dataclasses import dataclass
 
+sys.path.append("D:\Projects\FullStack_Projects\insurance_cost_prediction\src")
+
 @dataclass
 class DataIngestionConfig:
     raw_data_path = os.path.join('artifacts','data.csv')
