@@ -2,7 +2,10 @@ import sys
 import os
 import inspect
 
-sys.path.append("D:\Projects\FullStack_Projects\insurance_cost_prediction\src")
+try:
+    sys.path.append("D:\Projects\FullStack_Projects\insurance_cost_prediction\src")
+except:
+    pass
 
 from src.logger import logging
 from src.exception import CustomException

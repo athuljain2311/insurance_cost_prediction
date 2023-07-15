@@ -1,7 +1,7 @@
 import os
 import sys
-import pandas as pd
 
+import pandas as pd
 from sklearn.model_selection import train_test_split
 
 from src.logger import logging
@@ -11,8 +11,6 @@ from data_transformation import DataTransformation
 from model_trainer import ModelTrainer
 
 from dataclasses import dataclass
-
-sys.path.append("D:\Projects\FullStack_Projects\insurance_cost_prediction\src")
 
 @dataclass
 class DataIngestionConfig:
