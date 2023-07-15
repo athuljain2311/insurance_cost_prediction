@@ -1,0 +1,82 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Insurance Cost Predictor</h1>
+   
+       <form action="{{ url_for('predict_data')}}" method="post">
+        <h1>
+            <legend>Predicts the Insurance Cost</legend>
+        </h1>
+
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input class="form-control" type="number" name="age"
+                placeholder="Enter the Age" min='0' max='120' />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Sex</label>
+            <select class="form-control" name="sex" placeholder="Enter the Sex" required>
+                <option class="placeholder" selected disabled value="">Select the Sex</option>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">BMI</label>
+            <input class="form-control" type="number" name="bmi"
+                placeholder="Enter the BMI" min='0' max='100' step=".01" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Children</label>
+            <input class="form-control" type="number" name="children"
+                placeholder="Enter the Number of Children" min='0' max="50" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Smoker</label>
+            <select class="form-control" name="smoker" placeholder="Smoker/Non-Smoker" required>
+                <option class="placeholder" selected disabled value="">Select whether Smoker/Non-Smoker</option>
+                <option value="yes">
+                    Smoker
+                </option>
+                <option value="no">
+                    Non-Smoker
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Region</label>
+            <select class="form-control" name="region" placeholder="Select the Region" required>
+                <option class="placeholder" selected disabled value="">Select the Region</option>
+                <option value="southeast">
+                    South East
+                </option>
+                <option value="southwest">
+                    South West
+                </option>
+                <option value="northwest">
+                    North West
+                </option>
+                <option value="northeast">
+                    North East
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict the Selling Price" required />
+        </div>
+    </form>
+    <h2>
+       The  predicted charges : {{charges}}
+    </h2>
+   <body>
+</html>

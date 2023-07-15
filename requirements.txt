@@ -5,4 +5,5 @@ scikit-learn
 datetime
 dill
 xgboost
-#-e .
+flask
+-e .
